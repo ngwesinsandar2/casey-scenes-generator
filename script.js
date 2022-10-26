@@ -25,12 +25,20 @@ const scenesImages = [
     },
 ]
 
+const loader = document.querySelector(".loader");
 const sceneImg = document.querySelector(".scene-img");
 const generateBtn = document.querySelector(".generate-btn");
 
 const scenesGenerator = () => {
-    let randomNum = Math.floor(Math.random() * scenesImages.length)
-    sceneImg.src = scenesImages[randomNum].src
+    loader.hidden = false
+    sceneImg.hidden = true
+
+    setTimeout(() => {
+        loader.hidden = true
+        sceneImg.hidden = false
+        let randomNum = Math.floor(Math.random() * scenesImages.length);
+        sceneImg.src = scenesImages[randomNum].src;
+    }, 3000);
 }
 
-generateBtn.addEventListener("click", scenesGenerator)
+generateBtn.addEventListener("click", scenesGenerator);
