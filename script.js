@@ -38,7 +38,7 @@ const scenesGenerator = () => {
         sceneImg.hidden = false
         let randomNum = Math.floor(Math.random() * scenesImages.length);
         sceneImg.src = scenesImages[randomNum].src;
-    }, 3000);
+    }, 2500);
 }
 
 generateBtn.addEventListener("click", scenesGenerator);
