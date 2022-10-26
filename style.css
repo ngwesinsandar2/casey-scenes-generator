@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.background-image {
+    background-image: url(https://images4.newscred.com/Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg==);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene-box {
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 10px 10px 0px;
+    background-color: #ffffff69;
+    backdrop-filter: blur(5px) contrast(100%);
+}
+
+.img-con {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.scene-img {
+    width: 70%;
+    border-radius: 5px;
+}
+
+.serie-name {
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.btn-con {
+    margin-top: 20px;
+}
+
+.btn {
+    border: 2px solid #000;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 3px 3px;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.742);
+    box-shadow: none;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .scene-box {
+        width: 90%;
+    }
+
+    .scene-img {
+        width: 100%;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .scene-box {
+        width: 90%;
+    }
+
+    .scene-img {
+        width: 100%;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .scene-box {
+        width: 90%;
+    }
+
+    .scene-img {
+        width: 100%;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .scene-box {
+        width: 90%;
+    }
+
+    .scene-img {
+        width: 100%;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
